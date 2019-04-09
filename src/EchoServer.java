@@ -22,6 +22,7 @@ public final class EchoServer extends Thread {
 		public void run() {
 		  try {
 			  ServerSocket server = new ServerSocket(PORT, 1);
+			  System.out.println("Server running");
 			  while (true) {
 				  Socket client = server.accept();
 				  System.out.println("Client connected");
